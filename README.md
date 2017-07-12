@@ -1,31 +1,49 @@
+R\_tools
+================
+F. Waldner
+July 12, 2017
+
+\`\`\`
+
+Viz
 ---
-title: "R_tools"
-author: "F. Waldner"
-date: "July 12, 2017"
-output: github_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-```{r global_options, include = FALSE}
-library(knitr)
-options(width = 120)
-opts_chunk$set(fig.width = 12, fig.height = 8, fig.path = 'Figs/',
-               include = TRUE, warning = FALSE, message = FALSE)
+locateGlobe
+-----------
+
+First function
+
+``` r
+source("C:/Users/waldner/Documents/git/R_tools/viz/plot_world_sphere.R")
 ```
 
-## Viz
+    ## Loading required package: rworldmap
 
-## locateGlobe
+    ## Loading required package: sp
 
-```{r locateGlobe, echo=FALSE}
-source(C:/Users/waldner/Documents/git/R_tools/viz/plot_world_sphere.R)
+    ## ### Welcome to rworldmap ###
 
-```
+    ## For a short introduction type :   vignette('rworldmap')
 
-```{r locateGlobePlot}
-df.point <- data.frame(x=30,y=30)
-p.lg <- locateGlobe(df.point, 40, 30, c =0, size=10, alpha=0.9)
-plot(p.lg)
-```
+    ## Loading required package: dplyr
+
+    ## 
+    ## Attaching package: 'dplyr'
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
+
+    ## Loading required package: ggplot2
+
+    ## Loading required package: geosphere
+
+    ## Regions defined for each Polygons
+
+    ## Error in raster(extent(c(-180, 180, -90, 90)), 1000): could not find function "raster"
+
+    ## Error in plot(p.lg): object 'p.lg' not found

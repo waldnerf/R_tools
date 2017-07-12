@@ -1,0 +1,28 @@
+---
+title: "R_tools"
+author: "F. Waldner"
+date: "July 12, 2017"
+output: github_document
+---
+
+```{r setup, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```      
+```
+
+## Viz
+
+## locateGlobe
+
+First function
+```{r locateGlobe}
+
+source("C:/Users/waldner/Documents/git/R_tools/viz/plot_world_sphere.R")
+
+```
+
+```{r locateGlobePlot, echo=FALSE}
+df.point <- data.frame(x=30,y=30)
+p.lg <- locateGlobe(df.point, 40, 30, c =0, size=10, alpha=0.9)
+plot(p.lg)
+```
